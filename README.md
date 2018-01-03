@@ -3,9 +3,9 @@
 
  ![image](https://raw.githubusercontent.com/wiki/ksvc/KSVSShortVideoKit_Android/images/shortvideo_api.png)
  
- * [KSYMediaEditorKit_Android](https://github.com/ksvc/KSYMediaEditorKit_Android) 短视频SDK，只包含短视频相关功能。如果单独使用这个SDK，需要自己实现APP展示效果、上传、播放等。在使用时，必须通过短视频SDK和上传的鉴权流程
- * [KSVSShortVideoCore_Android](https://github.com/ksvc/KSVSShortVideoCore_Android) 短视频解决方案核心SDK，包含短视频SDK所有接口，并且还增加上传、==智能推荐(暂时未开放)==。如果使用这个SDK，需要自己实现APP展示效果和播放等。在使用时，只需要完成解决方案的鉴权过程，不在需要进行其他的鉴权过程
- * [KSVSShortVideoKit_Android](https://github.com/ksvc/KSVSShortVideoKit_Android) 短视频解决方案，包含短视频SDK一部分功能，支持视频上传、播放、智能推荐，并且实现了一套直接可用的展示效果。如果使用这个SDK，只需要在完成鉴权的前提下开启相应的界面，用户可以快速的进行集成。
+ * [KSYMediaEditorKit_Android](https://github.com/ksvc/KSYMediaEditorKit_Android) 短视频SDK，只包含短视频相关功能。如果使用这个SDK，需要自己实现APP展示效果、上传、播放等。在使用时，必须通过短视频SDK的鉴权流程
+ * [KSVSShortVideoCore_Android](https://github.com/ksvc/KSVSShortVideoCore_Android) 短视频解决方案Core SDK，包含短视频SDK所有接口，并且还增加上传、==智能推荐(暂时未开放)==。使用这个SDK，需要自己实现APP展示效果和播放功能。在使用时，只需要完成解决方案的鉴权流程。注意：不需要在进行短视频SDK提供的鉴权
+ * [KSVSShortVideoKit_Android](https://github.com/ksvc/KSVSShortVideoKit_Android) 短视频解决方案，包含短视频SDK一部分功能，支持视频上传、播放、智能推荐，并且实现了一套直接可用的展示效果。如果使用这个SDK，只需要在完成鉴权的前提下开启相应的界面，可以快速的进行集成。
  
  如果您使用过短视频SDK **“KSYMediaEditorKit_Android”**，需要升级为KSVSShortVideoCore_Android，请跳转到[这里](https://github.com/ksvc/KSVSShortVideoCore_Android/wiki/%E7%9F%AD%E8%A7%86%E9%A2%91SDK%E5%8D%87%E7%BA%A7%E4%B8%BA%E7%9F%AD%E8%A7%86%E9%A2%91%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88)
  
@@ -16,7 +16,7 @@
 
 ### 2.1 架构流程描述
 * APP 集成该方案SDK时，需要先鉴权才能使用短视频解决方案后续功能
-* Core版本方案方案包含上传上传图片（头像、封面）、视频功能，上传至金山云端
+* Core版本方案包含上传图片（头像、封面）、视频功能，上传至金山云端
 * 录制、编辑、美颜等功能由金山云短视频SDK（KSYMediaEditorKit）提供，KSYMediaEditorKit与解决方案SDK是两个独立的部分，而鉴权操作统一由解决方案SDK处理即可
 * 播放功能由KSYMediaPlayer提供
 ### 2.2 鉴权流程
@@ -56,10 +56,9 @@
         compile 'com.ksyun.media:libksysv-arm64:2.0.0'
         compile 'com.ksyun.media:libksysv-armv7a:2.0.0'
         compile 'com.ksyun.media:libksysv-x86:2.0.0'
-        // KS3 上传需要
+        
         compile 'com.android.volley:volley:1.0.0'
         compile 'com.ksyun.ks3:ks3androidsdk:1.4.1'
-        // kts需要
         compile 'io.reactivex.rxjava2:rxjava:2.0.1'
         compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
         compile 'com.squareup.retrofit2:retrofit:2.3.0'
