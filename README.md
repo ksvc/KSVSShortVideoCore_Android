@@ -7,7 +7,7 @@
  * [KSVSShortVideoCore_Android](https://github.com/ksvc/KSVSShortVideoCore_Android) 短视频解决方案核心SDK，包含短视频SDK所有接口，并且还增加上传、==智能推荐(暂时未开放)==。如果使用这个SDK，需要自己实现APP展示效果和播放等。在使用时，只需要完成解决方案的鉴权过程，不在需要进行其他的鉴权过程
  * [KSVSShortVideoKit_Android](https://github.com/ksvc/KSVSShortVideoKit_Android) 短视频解决方案，包含短视频SDK一部分功能，支持视频上传、播放、智能推荐，并且实现了一套直接可用的展示效果。如果使用这个SDK，只需要在完成鉴权的前提下开启相应的界面，用户可以快速的进行集成。
  
- 如果您使用过短视频SDK **“KSYMediaEditorKit_Android”**，需要升级为KSVSShortVideoCore_Android，请跳转到[这里](http://note.youdao.com/noteshare?id=9ebb87ebf33faa67419348f1f801fe62)
+ 如果您使用过短视频SDK **“KSYMediaEditorKit_Android”**，需要升级为KSVSShortVideoCore_Android，请跳转到[这里](https://github.com/ksvc/KSVSShortVideoCore_Android/wiki/%E7%9F%AD%E8%A7%86%E9%A2%91SDK%E5%8D%87%E7%BA%A7%E4%B8%BA%E7%9F%AD%E8%A7%86%E9%A2%91%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88)
  
 ## 1 简述
 ## 2 项目架构
@@ -36,7 +36,7 @@
 
 * **金山云转码**
 ## 4 接入流程
- 如果您使用过短视频SDK **“KSYMediaEditorKit_Android”**，需要升级为KSVSShortVideoCore_Android，请跳转到[这里](http://note.youdao.com/noteshare?id=9ebb87ebf33faa67419348f1f801fe62)
+ 如果您使用过短视频SDK **“KSYMediaEditorKit_Android”**，需要升级为KSVSShortVideoCore_Android，请跳转到[这里](https://github.com/ksvc/KSVSShortVideoCore_Android/wiki/%E7%9F%AD%E8%A7%86%E9%A2%91SDK%E5%8D%87%E7%BA%A7%E4%B8%BA%E7%9F%AD%E8%A7%86%E9%A2%91%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88)
 ### 4.1 Token 申请流程
  1. 若购买短视频解决方案套餐包，需进入[金山云短视频解决方案官网](https://www.ksyun.com/post/solution/KSVS)，点击“购买套餐包”，确认购买，填写表单信息，授权token会以邮件的形式提供。
    2. 若单独购买短视频SDK，联系金山云销售进行授权申请，或者直接拨打：62927777 转 5120
@@ -93,6 +93,7 @@
   4. 复制demo工程的KSVSShortVideoKit类到您的项目中。
   
    **注意：KSVSShortVideoKit就是SDK对外提供的接口。在wiki中我会仔细描述每个方法的用途**
+   
   5. 具体接口的使用，请在WIKI查看：[wiki](https://github.com/ksvc/KSVSShortVideoCore_Android/wiki)
 ## 5 反馈与建议
 ### 5.1 反馈模版
@@ -116,4 +117,4 @@
     * 574179720 视频云技术交流群
     * 620036233 视频云Android技术交流
     * 以上两个加一个QQ群即可
-  * Issues: https://github.com/ksvc/KSVSShortVideoKit_Android/issues
+  * Issues: https://github.com/ksvc/KSVSShortVideoCore_Android/issues
