@@ -42,12 +42,13 @@
    2. 若单独购买短视频SDK，联系金山云销售进行授权申请，或者直接拨打：62927777 转 5120
 
 ### 4.2 集成流程
- 1. 从github下载AAR文件
-   
-        ```
-         github 地址：https://github.com/ksvc/KSVSShortVideoCore_Android
-        ```
-        
+ 1. 从github下载AAR文件或者使用Gradle 依赖 
+     
+     ```
+      github 地址：https://github.com/ksvc/KSVSShortVideoCore_Android
+      gradle 依赖：compile 'com.ksyun.ts:ShortVideoCore:1.1.0' 
+     ```
+     
  1. 通过jcenter依赖其他相关项目
 
      ```
