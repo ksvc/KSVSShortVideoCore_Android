@@ -46,7 +46,7 @@
      
      ```
       github 地址：https://github.com/ksvc/KSVSShortVideoCore_Android
-      gradle 依赖：compile 'com.ksyun.ts:ShortVideoCore:1.1.0' 
+      gradle 依赖：compile 'com.ksyun.ts:ShortVideoCore:1.1.1' 
      ```
      
  1. 通过jcenter依赖其他相关项目
